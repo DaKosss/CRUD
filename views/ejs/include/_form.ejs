@@ -1,0 +1,38 @@
+<form action="/api/users" method="POST" id="add-user">
+    <div class="new__user">
+        <div class="new-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Walter">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="exsample@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Пол</label>
+            <div class="radio">
+                <input type="radio" name="gender" value="Мужчина">
+                <label for="gender" class="text-light">Мужчина</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="gender" value="Женщина">
+                <label for="gender" class="text-light">Женщина</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Статус</label>
+            <div class="radio">
+                <input type="radio" name="status" value="Активный">
+                <label for="gender" class="text-light">Активный</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="status" value="Пассивный">
+                <label for="gender" class="text-light">Пассивный</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark">Добавить</button>
+        </div>
+    </div>
+</form>
